@@ -189,7 +189,8 @@ class MyTrainer(Trainer):
     def _get_train_sampler(self):
         return None
 
-    def _load_optimizer_and_scheduler(self, checkpoint):
+    # comment this out to load tokenizer when resuming training
+    def _load_optimizer_and_scheduler(self, checkpoint):  
         return None
 
 
