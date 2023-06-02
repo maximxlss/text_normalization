@@ -26,8 +26,6 @@ t = time.time()
 model = T5ForConditionalGeneration.from_pretrained(path)
 print(f"[{time.time() - t}s.] Loaded {path}")
 
-model.resize_token_embeddings(tokenizer.vocab_size + 100)
-
 # gpu = torch.device("cuda")
 
 # model.to(gpu, torch.float32)
